@@ -259,15 +259,15 @@
     Januari\or Februari\or Maret\or April\or Mei\or Juni\or
     Juli\or Agustus\or September\or Oktober\or November\or Desember\fi
     \space \number\year}
-\newcommand{\degree}[1]{\gdef\@degree{#1}}
+\newcommand{\degree}[1]{\gdef\@degree{Fisika}}
 \newcommand{\@degree}{}
 \newcommand{\yearsubmit}[1]{\gdef\@yearsubmit{#1}}
 \newcommand{\@yearsubmit}{}
-\newcommand{\program}[1]{\gdef\@program{#1}}
+\newcommand{\program}[1]{\gdef\@program{Fisika}}
 \newcommand{\@program}{}
-\newcommand{\headprogram}[1]{\gdef\@headprogram{#1}}
+\newcommand{\headprogram}[1]{\gdef\@headprogram{Fisika}}
 \newcommand{\@headprogram}{}
-\newcommand{\dept}[1]{\gdef\@dept{#1}}
+\newcommand{\dept}[1]{\gdef\@dept{Fisika}}
 \newcommand{\@dept}{}
 \newcommand{\firstsupervisor}[1]{\gdef\@firstsupervisor{#1}}
 \newcommand{\@firstsupervisor}{}

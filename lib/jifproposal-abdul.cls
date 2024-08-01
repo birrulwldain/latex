@@ -263,11 +263,11 @@
 \newcommand{\@degree}{}
 \newcommand{\yearsubmit}[1]{\gdef\@yearsubmit{#1}}
 \newcommand{\@yearsubmit}{}
-\newcommand{\program}[1]{\gdef\@program{#1}}
+\newcommand{\program}[1]{\gdef\@program{Fisika}}
 \newcommand{\@program}{}
-\newcommand{\headprogram}[1]{\gdef\@headprogram{#1}}
+\newcommand{\headprogram}[1]{\gdef\@headprogram{Fisika}}
 \newcommand{\@headprogram}{}
-\newcommand{\dept}[1]{\gdef\@dept{#1}}
+\newcommand{\dept}[1]{\gdef\@dept{Fisika}}
 \newcommand{\@dept}{}
 \newcommand{\firstsupervisor}[1]{\gdef\@firstsupervisor{#1}}
 \newcommand{\@firstsupervisor}{}
@@ -307,7 +307,7 @@
       \vspace{2.5cm}
       \MakeUppercase{\large{\bfseries{PROPOSAL PENELITIAN}}}\\ %it's me!
       \vspace{1.0cm}
-	  \normalsize{Diajukan untuk melengkapi tugas-tugas dan\\ memenuhi syarat-syarat guna memperoleh gelar Sarjana Komputer\\} %it's me!
+	  \normalsize{Diajukan untuk melengkapi tugas-tugas dan\\ memenuhi syarat-syarat guna memperoleh gelar Sarjana Sains\\} %it's me!
        \vspace{1.0cm}
        {\normalfont
         Oleh:\\
@@ -320,7 +320,7 @@
         \vfill
 		\vspace{2cm}
        {\normalfont
-         \MakeUppercase{\normalfont\bfseries Program Studi \@dept Jurusan \@dept}\\
+         \MakeUppercase{\normalfont\bfseries Program Studi Fisika  Jurusan Fisika}\\
          \MakeUppercase{\normalfont\bfseries\@faculty} \MakeUppercase{\normalfont\bfseries\@university}\\
          \MakeUppercase{\normalfont\bfseries\@city}\\
          %\vspace{0.5cm}
@@ -348,7 +348,7 @@
 			\vspace{2.5cm}
 			\MakeUppercase{\large{\bfseries{PROPOSAL PENELITIAN}}}\\ %it's me!
 			\vspace{1.0cm}
-			\normalsize{Diajukan untuk melengkapi tugas-tugas dan\\ memenuhi syarat-syarat guna memperoleh gelar Sarjana Komputer\\} %it's me!
+			\normalsize{Diajukan untuk melengkapi tugas-tugas dan\\ memenuhi syarat-syarat guna memperoleh gelar Sarjana Sains\\} %it's me!
 			\vspace{1.0cm}
 			{\normalfont
 				Oleh:\\
@@ -361,7 +361,7 @@
 			\vfill
 			\vspace{2cm}
 			{\normalfont
-				\MakeUppercase{\normalfont\bfseries Program Studi Informatika Jurusan \@dept}\\
+				\MakeUppercase{\normalfont\bfseries Program Studi Fisika Jurusan \@dept}\\
 				\MakeUppercase{\normalfont\bfseries\@faculty} \MakeUppercase{\normalfont\bfseries\@university ,  \@city}\\
 				%\MakeUppercase{\normalfont\bfseries\@city}\\
 				%\vspace{0.5cm}
