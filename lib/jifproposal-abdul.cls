@@ -269,15 +269,16 @@
 \newcommand{\@headprogram}{}
 \newcommand{\dept}[1]{\gdef\@dept{Fisika}}
 \newcommand{\@dept}{}
-\newcommand{\firstsupervisor}[1]{\gdef\@firstsupervisor{#1}}
+\newcommand{\firstsupervisor}[1]{\gdef\@firstsupervisor{Prof. Dr. Eng. Nasrullah, S.Si., M.T.}}
 \newcommand{\@firstsupervisor}{}
-\newcommand{\secondsupervisor}[1]{\gdef\@secondsupervisor{#1}}
+\newcommand{\secondsupervisor}[1]{\gdef\@secondsupervisor{Dr. Khairun Saddami, S.T.
+}}
 \newcommand{\@secondsupervisor}{}
-\newcommand{\kajur}[1]{\gdef\@kajur{#1}}
+\newcommand{\kajur}[1]{\gdef\@kajur{Dr. Saumi Syahreza, S.Si, M.Si.}}
 \newcommand{\@kajur}{}
-\newcommand{\firstnip}[1]{\gdef\@firstnip{#1}}
+\newcommand{\firstnip}[1]{\gdef\@firstnip{197607031995121001}}
 \newcommand{\@firstnip}{}
-\newcommand{\secondnip}[1]{\gdef\@secondnip{#1}}
+\newcommand{\secondnip}[1]{\gdef\@secondnip{199103182022031008}}
 \newcommand{\@secondnip}{}
 \newcommand{\kajurnip}[1]{\gdef\@kajurnip{#1}}
 \newcommand{\@kajurnip}{}
@@ -287,7 +288,7 @@
 \newcommand{\@dekannip}{}
 \newcommand{\kaprodi}[1]{\gdef\@kaprodi{#1}}
 \newcommand{\@kaprodi}{}
-\newcommand{\kaprodinip}[1]{\gdef\@kaprodinip{#1}}
+\newcommand{\kaprodinip}[1]{\gdef\@kaprodinip{197609172005011002}}
 \newcommand{\@kaprodinip}{}
 
 %------------------------------------------------------------
@@ -422,11 +423,11 @@
 			
 			Mengetahui:\\
 			\vspace{0.9cm}
-			Koordinator Program Studi Informatika \\ 
+			Ketua Program Studi Fisika \\ 
 			\vspace{-0.27cm}\\
 			Universitas Syiah Kuala,\\
 			\vspace{1.7cm}\\
-			\underline{\@kaprodi} & \\
+			\underline{Dr. Saumi Syahreza, S.Si, M.Si.} & \\
 			NIP. \@kaprodinip &
 
 			\end{doublespace}
