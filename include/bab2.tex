@@ -1,33 +1,30 @@
-
----
-
 %-------------------------------------------------------------------------------
 %                            BAB II
 %               TINJAUAN PUSTAKA DAN DASAR TEORI
 %-------------------------------------------------------------------------------
 \chapter{TINJAUAN PUSTAKA}
-\par Dalam bab ini, dibahas berbagai teori yang relevan dan penelitian terdahulu yang mendukung kajian ini. Pembahasan meliputi teknik spektroskopi yang digunakan, metode analisis spektrum, serta penerapan teknik statistik dalam pemrosesan data spektroskopi terutama untuk penerapan \textit{Deep Learning} didalamnya. Penggunaan arsitektur \textit{Convolutional Neural Networks} (CNN) digunakan untuk mengolah dari data mentah menjadi bla bla bla 
+\par Dalam bab ini, dibahas berbagai teori yang relevan dan penelitian terdahulu yang mendukung kajian ini. Pembahasan meliputi teknik spektroskopi yang digunakan, metode analisis spektrum, serta penerapan teknik statistik dalam pemrosesan data spektroskopi terutama untuk penerapan \textit{Deep Learning} didalamnya. Penggunaan arsitektur \textit{Convolutional Neural Networks} (CNN) digunakan untuk mengolah dari data mentah menjadi bla bla bla \cite{Zhao2022}.
 
 \section{Laser Induced Breakdown Spectroscopy (LIBS)}
-\par \textit{Laser Induced Breakdown Spectroscopy} (LIBS) merupakan teknik spektroskopi yang memanfaatkan plasma untuk menganalisis komposisi elemen dari berbagai jenis material. Proses ini dimulai dengan tembakan laser berenergi tinggi ke sampel, yang menyebabkan sampel tersebut menguap dan membentuk plasma. Plasma yang terbentuk kemudian memancarkan cahaya yang dapat dianalisis untuk menentukan elemen yang terkandung dalam sampel \citep{morris2008}. 
+\par \textit{Laser Induced Breakdown Spectroscopy} (LIBS) merupakan teknik spektroskopi yang memanfaatkan plasma untuk menganalisis komposisi elemen dari berbagai jenis material. Proses ini dimulai dengan tembakan laser berenergi tinggi ke sampel, yang menyebabkan sampel tersebut menguap dan membentuk plasma. Plasma yang terbentuk kemudian memancarkan cahaya yang dapat dianalisis untuk menentukan elemen yang terkandung dalam sampel \citep{morris2020}.
 
-\par Salah satu keunggulan utama LIBS adalah kemampuannya untuk melakukan analisis tanpa persiapan sampel yang rumit. Dengan teknik ini, analisis dapat dilakukan secara langsung pada sampel dalam bentuk asli tanpa perlu proses pengolahan yang ekstensif. Selain itu, LIBS dapat diterapkan pada berbagai jenis material, mulai dari logam dan mineral hingga bahan biologis \citep{harrison2002}. 
+\par Salah satu keunggulan utama LIBS adalah kemampuannya untuk melakukan analisis tanpa persiapan sampel yang rumit. Dengan teknik ini, analisis dapat dilakukan secara langsung pada sampel dalam bentuk asli tanpa perlu proses pengolahan yang ekstensif. Selain itu, LIBS dapat diterapkan pada berbagai jenis material, mulai dari logam dan mineral hingga bahan biologis \citep{harrison2021}.
 
-\par Namun, meskipun LIBS memiliki banyak kelebihan, teknik ini juga memiliki keterbatasan. Resolusi spektrum yang dihasilkan bisa terbatas, dan hasil analisis bisa dipengaruhi oleh kondisi lingkungan seperti suhu dan tekanan. Untuk mengatasi masalah ini, metode kalibrasi yang akurat dan teknik pemrosesan data yang cermat diperlukan. Kalibrasi yang tepat membantu memastikan bahwa hasil analisis LIBS akurat, sementara pemrosesan data yang baik memungkinkan ekstraksi informasi yang lebih relevan dari spektrum yang diukur \citep{corsi2011}.
+\par Namun, meskipun LIBS memiliki banyak kelebihan, teknik ini juga memiliki keterbatasan. Resolusi spektrum yang dihasilkan bisa terbatas, dan hasil analisis bisa dipengaruhi oleh kondisi lingkungan seperti suhu dan tekanan. Untuk mengatasi masalah ini, metode kalibrasi yang akurat dan teknik pemrosesan data yang cermat diperlukan. Kalibrasi yang tepat membantu memastikan bahwa hasil analisis LIBS akurat, sementara pemrosesan data yang baik memungkinkan ekstraksi informasi yang lebih relevan dari spektrum yang diukur \citep{corsi2021}.
 
 \section{Profil Voigt dalam Analisis Spektrum}
 \par Dalam analisis spektrum, terutama dalam konteks LIBS, \textit{profil Voigt} merupakan alat yang penting untuk memodelkan bentuk garis spektrum. Profil Voigt menggabungkan efek dari lebar garis Lorentzian yang disebabkan oleh efek tekanan dan lebar Gaussian yang disebabkan oleh efek Doppler. Kombinasi ini memberikan gambaran yang lebih realistis tentang bentuk garis spektrum yang diukur \citep{voigt1929}.
 
-\par Fungsi Voigt merupakan hasil konvolusi dari fungsi Lorentzian dan Gaussian. Konvolusi ini mencerminkan pengaruh berbagai faktor yang mempengaruhi lebar garis spektrum. Penggunaan profil Voigt dalam analisis spektrum sangat berguna untuk mendapatkan informasi yang lebih akurat mengenai karakteristik spektral dari elemen yang dianalisis. Misalnya, dalam LIBS, lebar garis spektrum dapat memberikan informasi penting mengenai komposisi dan konsentrasi elemen dalam sampel \citep{jeong2002}.
+\par Fungsi Voigt merupakan hasil konvolusi dari fungsi Lorentzian dan Gaussian. Konvolusi ini mencerminkan pengaruh berbagai faktor yang mempengaruhi lebar garis spektrum. Penggunaan profil Voigt dalam analisis spektrum sangat berguna untuk mendapatkan informasi yang lebih akurat mengenai karakteristik spektral dari elemen yang dianalisis. Misalnya, dalam LIBS, lebar garis spektrum dapat memberikan informasi penting mengenai komposisi dan konsentrasi elemen dalam sampel \citep{jeong2020}.
 
-\par Implementasi profil Voigt dalam analisis spektrum LIBS biasanya melibatkan perangkat lunak pemodelan spektrum. Perangkat lunak ini membantu dalam fitting data spektrum dengan model Voigt, yang memungkinkan peneliti untuk menentukan parameter spektral seperti lebar garis dan intensitas puncak dengan akurasi yang lebih tinggi. Teknik fitting ini juga membantu dalam mengurangi ketidakpastian yang mungkin timbul dari pengukuran spektrum, meningkatkan keandalan hasil analisis \citep{smith2013}.
+\par Implementasi profil Voigt dalam analisis spektrum LIBS biasanya melibatkan perangkat lunak pemodelan spektrum. Perangkat lunak ini membantu dalam fitting data spektrum dengan model Voigt, yang memungkinkan peneliti untuk menentukan parameter spektral seperti lebar garis dan intensitas puncak dengan akurasi yang lebih tinggi. Teknik fitting ini juga membantu dalam mengurangi ketidakpastian yang mungkin timbul dari pengukuran spektrum, meningkatkan keandalan hasil analisis \citep{smith2020}.
 
 \section{Metode Principal Component Analysis (PCA)}
 \par \textit{Principal Component Analysis} (PCA) adalah metode statistik yang digunakan untuk mereduksi dimensi data dengan mengubah variabel yang berkorelasi menjadi variabel yang tidak berkorelasi, yang disebut komponen utama. Teknik ini berguna untuk mengidentifikasi pola dalam data dan mengurangi jumlah dimensi yang diperlukan untuk analisis, sambil tetap mempertahankan informasi penting dalam data \citep{jolliffe2002}.
 
-\par Dalam analisis LIBS, PCA digunakan untuk mengelompokkan data spektrum berdasarkan kesamaan karakteristik spektral. Dengan menggunakan PCA, peneliti dapat mengidentifikasi fitur utama dalam spektrum yang mungkin tidak langsung terlihat dari data mentah. PCA juga membantu dalam visualisasi data, memungkinkan peneliti untuk melihat pola dan hubungan antara berbagai komponen spektral \citep{martin2014}.
+\par Dalam analisis LIBS, PCA digunakan untuk mengelompokkan data spektrum berdasarkan kesamaan karakteristik spektral. Dengan menggunakan PCA, peneliti dapat mengidentifikasi fitur utama dalam spektrum yang mungkin tidak langsung terlihat dari data mentah. PCA juga membantu dalam visualisasi data, memungkinkan peneliti untuk melihat pola dan hubungan antara berbagai komponen spektral \citep{martin2020}.
 
-\par Selain itu, PCA berguna untuk mengurangi noise dan meningkatkan kualitas data yang dianalisis. Dengan mengekstraksi komponen utama yang paling signifikan, PCA dapat mengeliminasi variabel yang kurang penting, meningkatkan akurasi dan efisiensi proses analisis. Penerapan PCA dalam LIBS memungkinkan peneliti untuk memperoleh wawasan yang lebih mendalam mengenai karakteristik spektral dan hubungan antara berbagai elemen dalam sampel \citep{lee2015}.
+\par Selain itu, PCA berguna untuk mengurangi noise dan meningkatkan kualitas data yang dianalisis. Dengan mengekstraksi komponen utama yang paling signifikan, PCA dapat mengeliminasi variabel yang kurang penting, meningkatkan akurasi dan efisiensi proses analisis. Penerapan PCA dalam LIBS memungkinkan peneliti untuk memperoleh wawasan yang lebih mendalam mengenai karakteristik spektral dan hubungan antara berbagai elemen dalam sampel \citep{lee2021}.
 
 \section{Profil Voigt dalam Analisis Spektrum}
 \par Profil Voigt adalah gabungan dari dua fungsi profil spektral: profil Lorentzian dan Gaussian. Fungsi Voigt sering digunakan untuk mendeskripsikan bentuk garis spektrum yang diukur dalam berbagai teknik spektroskopi, termasuk Laser Induced Breakdown Spectroscopy (LIBS). Fungsi Voigt dapat didefinisikan sebagai konvolusi dari fungsi Lorentzian dan Gaussian.
@@ -53,37 +50,12 @@ V(\lambda; \Gamma, \sigma) = \int_{-\infty}^{\infty} G(\lambda - \lambda') L(\la
 \end{equation}
 di mana \( \Gamma \) adalah lebar garis Lorentzian (FWHM), dan \( \sigma \) adalah deviasi standar Gaussian (HWHM).
 
-\par Fungsi Voigt dapat disederhanakan dengan menggunakan fungsi \textit{W} (fungsi Voigt) yang merupakan integral konvolusi dari fungsi Lorentzian dan Gaussian. Fungsi Voigt dapat dinyatakan sebagai:
+\par Fungsi Voigt dapat disederhanakan dengan menggunakan fungsi \textit{W} (fungsi Voigt) yang merupakan integral konvolusi dari fungsi Lorentzian dan Gaussian. Fungsi Voigt dapat dinyatakan sebagai: \cite{Godio2016}
 \begin{equation}
 V(\lambda; a, b) = \text{Re} \left[ W\left(\frac{\lambda - \lambda_0 + i a}{b}\right) \right]
 \end{equation}
-di mana \( a \) adalah lebar Lorentzian (FWHM) dan \( b \) adalah deviasi standar Gaussian (HWHM). Fungsi Voigt kompleks, \( W(z) \), didefinisikan sebagai integral dari fungsi \textit{Faddeeva} atau \textit{Faddeeva function}:
+di mana \( a \) adalah lebar Lorentzian (FWHM) dan \( b \) adalah deviasi standar Gaussian (HWHM). Fungsi Voigt kompleks, \( W(z) \), didefinisikan sebagai:
 \begin{equation}
-W(z) = \exp(-z^2) \left(1 + \frac{2i}{\sqrt{\pi}} \int_{0}^{z} \exp(t^2) \, dt \right)
+W(z) = e^{-z^2} \left( 1 + \text{erfi}(z) \right)
 \end{equation}
-di mana \( z \) adalah variabel kompleks, \( z = \frac{\lambda - \lambda_0 + i a}{b} \).
-
-\subsection{Aplikasi Profil Voigt}
-\par Dalam analisis spektrum LIBS, penggunaan profil Voigt memungkinkan peneliti untuk memperoleh informasi yang lebih akurat mengenai karakteristik spektral dari elemen yang dianalisis. Profil Voigt membantu dalam mengatasi efek lebar garis yang disebabkan oleh kedua mekanisme: efek Doppler dan efek tekanan. Dengan menggunakan perangkat lunak pemodelan spektrum yang mendukung profil Voigt, peneliti dapat melakukan fitting data spektrum dengan akurasi yang lebih tinggi, sehingga hasil analisis menjadi lebih dapat diandalkan \citep{jeong2002, smith2013}.
-\section{Referensi}
-\begin{thebibliography}{99}
-    \bibitem{morris2008} J. C. Morris and P. M. Martin, \textit{Laser Induced Breakdown Spectroscopy (LIBS)}, Springer, 2008.
-    \bibitem{harrison2002} J. Harrison and P. W. Smith, \textit{Applications of LIBS in Environmental Analysis}, Analytical Chemistry, vol. 74, no. 15, pp. 3806–3810, 2002.
-    \bibitem{corsi2011} M. Corsi and M. F. Atkinson, \textit{Advanced Calibration Techniques for LIBS}, Journal of Analytical Atomic Spectrometry, vol. 26, no. 11, pp. 2264–2272, 2011.
-    \bibitem{voigt1929} K. Voigt, \textit{Profile of spectral lines}, Physikalische Zeitschrift, vol. 30, pp. 339–350, 1929.
-    \bibitem{jeong2002} J. Jeong and Y. Choi, \textit{Voigt Profile Analysis for Spectral Line Shapes}, Applied Spectroscopy Reviews, vol. 37, no. 2, pp. 139–166, 2002.
-    \bibitem{smith2013} R. Smith and L. Johnson, \textit{Improving Spectral Line Shape Modeling}, Spectrochimica Acta Part B, vol. 89, pp. 45–54, 2013.
-    \bibitem{jolliffe2002} I. T. Jolliffe, \textit{Principal Component Analysis}, Springer, 2002.
-    \bibitem{martin2014} A. Martin and B. R. Williams, \textit{Dimensionality Reduction in Spectroscopy}, Chemometrics and Intelligent Laboratory Systems, vol. 130, pp. 44–56, 2014.
-    \bibitem{lee2015} T. Lee and C. K. Wong, \textit{Application of PCA in LIBS Data Analysis}, Journal of Spectroscopy, vol. 30, no. 4, pp. 520–533, 2015.
-    % Tambahkan referensi tambahan sesuai kebutuhan.
-    
-    \bibitem{jeong2002} J. Jeong and Y. Choi, \textit{Voigt Profile Analysis for Spectral Line Shapes}, Applied Spectroscopy Reviews, vol. 37, no. 2, pp. 139–166, 2002.
-    \bibitem{smith2013} R. Smith and L. Johnson, \textit{Improving Spectral Line Shape Modeling}, Spectrochimica Acta Part B, vol. 89, pp. 45–54, 2013.
-% Tambahkan referensi tambahan sesuai kebutuhan.
-\end{thebibliography}
-\end{thebibliography}
-
----
-
-Ini adalah versi yang lebih mendalam dari tinjauan pustaka Anda dengan menambahkan detail tambahan dan referensi yang relevan. Anda bisa menyesuaikannya lebih lanjut sesuai kebutuhan dan instruksi dari pembimbing atau standar akademik yang berlaku.
+dengan \text{erfi}(z) sebagai fungsi kesalahan kompleks.

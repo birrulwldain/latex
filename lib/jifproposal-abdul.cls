@@ -308,7 +308,7 @@
       \vspace{2.5cm}
       \MakeUppercase{\large{\bfseries{PROPOSAL PENELITIAN}}}\\ %it's me!
       \vspace{1.0cm}
-	  \normalsize{Diajukan untuk melengkapi tugas-tugas dan\\ memenuhi syarat-syarat guna memperoleh gelar Sarjana Sains\\} %it's me!
+	  \normalsize{Diajukan untuk melengkapi tugas-tugas dan\\ memenuhi syarat-syarat guna pelaksanaan penelitian Tugas Akhir\\} %it's me!
        \vspace{1.0cm}
        {\normalfont
         Oleh:\\
@@ -362,7 +362,7 @@
 			\vfill
 			\vspace{2cm}
 			{\normalfont
-				\MakeUppercase{\normalfont\bfseries Program Studi Fisika Jurusan \@dept}\\
+				\MakeUppercase{\normalfont\bfseries Program Studi Fisika Departemen \@dept}\\
 				\MakeUppercase{\normalfont\bfseries\@faculty} \MakeUppercase{\normalfont\bfseries\@university ,  \@city}\\
 				%\MakeUppercase{\normalfont\bfseries\@city}\\
 				%\vspace{0.5cm}
@@ -423,7 +423,7 @@
 			
 			Mengetahui:\\
 			\vspace{0.9cm}
-			Ketua Program Studi Fisika \\ 
+			Ketua Departemen Fisika \\ 
 			\vspace{-0.27cm}\\
 			Universitas Syiah Kuala,\\
 			\vspace{1.7cm}\\

@@ -2,24 +2,24 @@
 % the `alpha' style, version 0.99a; for BibTeX version 0.99a.
 %
 % Copyright (C) 1988, 2010 Oren Patashnik.
-% Unlimited copying and redistribution of this file are permitted as long as
-% it is unmodified.  Modifications (and redistribution of modified versions)
+% Unlimited copying dan redistribution of this file are permitted as long as
+% it is unmodified.  Modifications (dan redistribution of modified versions)
 % are also permitted, but only if the resulting file is renamed.
 %
-% Differences between this style and `alpha' are generally heralded by a `%'.
+% Differences between this style dan `alpha' are generally heralded by a `%'.
 % The file btxbst.doc has the documentation for alpha.bst.
 %
 % This style should be used with the `apalike' LaTeX style (apalike.sty).
 % \cite's come out like "(Jones, 1986)" in the text but there are no labels
-% in the bibliography, and something like "(1986)" comes out immediately
-% after the author.  Author (and editor) names appear as last name, comma,
-% initials.  A `year' field is required for every entry, and so is either
+% in the bibliography, dan something like "(1986)" comes out immediately
+% after the author.  Author (dan editor) names appear as last name, comma,
+% initials.  A `year' field is required for every entry, dan so is either
 % an author (or in some cases, an editor) field or a key field.
 %
 % Editorial note:
 % Many journals require a style like `apalike', but I strongly, strongly,
 % strongly recommend that you not use it if you have a choice---use something
-% like `plain' instead.  Mary-Claire van Leunen (A Handbook for Scholars,
+% like `plain' instead.  Mary-Claire van Leunen (A Hdanbook for Scholars,
 % Knopf, 1979) argues convincingly that a style like `plain' encourages better
 % writing than one like `apalike'.  Furthermore the strongest arguments for
 % using an author-date style like `apalike'---that it's "the most practical"
@@ -28,7 +28,7 @@
 % computer-typesetting technology.  For instance page 401 anachronistically
 % states "The chief disadvantage of [a style like `plain'] is that additions
 % or deletions cannot be made after the manuscript is typed without changing
-% numbers in both text references and list."  LaTeX sidesteps the disadvantage.
+% numbers in both text references dan list."  LaTeX sidesteps the disadvantage.
 %
 % History:
 %   15-sep-86  (OP)  Original version by Oren Patashnik, ideas from Susan King.
@@ -169,7 +169,7 @@ FUNCTION {not}
   if$
 }
 
-FUNCTION {and}
+FUNCTION {dan}
 {   'skip$
     { pop$ #0 }
   if$
@@ -184,7 +184,7 @@ FUNCTION {or}
 FUNCTION {new.block.checkb}
 { empty$
   swap$ empty$
-  and
+  dan
     'skip$
     'new.block
   if$
@@ -221,7 +221,7 @@ FUNCTION {format.names}
                 'skip$
               if$
               t "others" =
-                { " et al." * }
+                { " dkk." * }
                 { " \& " * t * }
               if$
             }
@@ -320,7 +320,7 @@ FUNCTION {format.bvolume}
         'skip$
         { " of " * series emphasize * }
       if$
-      "volume and number" number either.or.check
+      "volume dan number" number either.or.check
     }
   if$
 }
@@ -363,7 +363,7 @@ FUNCTION {multi.page.check}
   #0 'multiresult :=
     { multiresult not
       t empty$ not
-      and
+      dan
     }
     { t #1 #1 substring$
       duplicate$ "-" =
@@ -503,12 +503,12 @@ FUNCTION {article}
 FUNCTION {book}
 { output.bibitem
   author empty$
-    { format.editors "author and editor" output.check
+    { format.editors "author dan editor" output.check
       editor format.key output
     }
     { format.authors output.nonnull
       crossref missing$
-        { "author and editor" editor either.or.check }
+        { "author dan editor" editor either.or.check }
         'skip$
       if$
     }
@@ -552,12 +552,12 @@ FUNCTION {booklet}
 FUNCTION {inbook}
 { output.bibitem
   author empty$
-    { format.editors "author and editor" output.check
+    { format.editors "author dan editor" output.check
       editor format.key output
     }
     { format.authors output.nonnull
       crossref missing$
-        { "author and editor" editor either.or.check }
+        { "author dan editor" editor either.or.check }
         'skip$
       if$
     }
@@ -567,14 +567,14 @@ FUNCTION {inbook}
   format.btitle "title" output.check
   crossref missing$
     { format.bvolume output
-      format.chapter.pages "chapter and pages" output.check
+      format.chapter.pages "chapter dan pages" output.check
       new.block
       format.number.series output
       new.sentence
       publisher "publisher" output.check
       address output
     }
-    { format.chapter.pages "chapter and pages" output.check
+    { format.chapter.pages "chapter dan pages" output.check
       new.block
       format.book.crossref output.nonnull
     }
@@ -781,7 +781,7 @@ MACRO {acta} {"Acta Informatica"}
 
 MACRO {cacm} {"Communications of the ACM"}
 
-MACRO {ibmjrd} {"IBM Journal of Research and Development"}
+MACRO {ibmjrd} {"IBM Journal of Research dan Development"}
 
 MACRO {ibmsj} {"IBM Systems Journal"}
 
@@ -796,7 +796,7 @@ MACRO {ipl} {"Information Processing Letters"}
 
 MACRO {jacm} {"Journal of the ACM"}
 
-MACRO {jcss} {"Journal of Computer and System Sciences"}
+MACRO {jcss} {"Journal of Computer dan System Sciences"}
 
 MACRO {scp} {"Science of Computer Programming"}
 
@@ -812,7 +812,7 @@ MACRO {toms} {"ACM Transactions on Mathematical Software"}
 
 MACRO {toois} {"ACM Transactions on Office Information Systems"}
 
-MACRO {toplas} {"ACM Transactions on Programming Languages and Systems"}
+MACRO {toplas} {"ACM Transactions on Programming Languages dan Systems"}
 
 MACRO {tcs} {"Theoretical Computer Science"}
 
@@ -835,7 +835,7 @@ FUNCTION {chop.word}
 }
 
 %                       There are three apalike cases: one person (Jones),
-%                       two (Jones and de~Bruijn), and more (Jones et~al.).
+%                       two (Jones dan de~Bruijn), dan more (Jones et~al.).
 %                       This function is much like format.crossref.editors.
 %
 FUNCTION {format.lab.names}
@@ -843,12 +843,12 @@ FUNCTION {format.lab.names}
   s #1 "{vv~}{ll}" format.name$
   s num.names$ duplicate$
   #2 >
-    { pop$ " et al." * }
+    { pop$ " dkk." * }
     { #2 <
         'skip$
         { s #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
-            { " et al." * }
-            { " and " * s #2 "{vv~}{ll}" format.name$ * }
+            { " dkk." * }
+            { " dan " * s #2 "{vv~}{ll}" format.name$ * }
           if$
         }
       if$
@@ -900,7 +900,7 @@ FUNCTION {calc.label}
     'author.editor.key.label
     { type$ "proceedings" =
         'editor.key.label                       % apalike ignores organization
-        'author.key.label                       % for labeling and sorting
+        'author.key.label                       % for labeling dan sorting
       if$
     }
   if$
@@ -923,7 +923,7 @@ FUNCTION {sort.format.names}
         'skip$
       if$                                               % apalike uses initials
       s nameptr "{vv{ } }{ll{ }}{  f{ }}{  jj{ }}" format.name$ 't := % <= here
-      nameptr numnames = t "others" = and
+      nameptr numnames = t "others" = dan
         { "et al" * }
         { t sortify * }
       if$
@@ -991,7 +991,7 @@ FUNCTION {editor.sort}
 %                       labels so that the `a's, `b's, etc. can be computed;
 %                       the second pass puts the references in "correct" order.
 %                       The presort function is for the first pass. It computes
-%                       label, sort.label, and title, and then concatenates.
+%                       label, sort.label, dan title, dan then concatenates.
 FUNCTION {presort}
 { calc.label
   label sortify
@@ -1028,7 +1028,7 @@ STRINGS { last.label next.extra }       % apalike labels are only for the text;
 
 INTEGERS { last.extra.num }             % there are none in the bibliography
 
-FUNCTION {initialize.extra.label.stuff} % and hence there is no `longest.label'
+FUNCTION {initialize.extra.label.stuff} % dan hence there is no `longest.label'
 { #0 int.to.chr$ 'last.label :=
   "" 'next.extra :=
   #0 'last.extra.num :=
